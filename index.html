@@ -8,7 +8,46 @@
 </head>
 <body>
     <main>
-        <h1>Medical Survey Form</h1>
+        <h1 id="title">Medical Survey Form</h1>
+        <p id="description">this is a questionnaire used by health care providers to collect information about the patient's medical history during a medical or physical examination.</p>
+        <hr>
+        <form id="survey-form" action="" method="post">
+            <fieldset>
+                <div>
+                    <h5>Full Name</h5>
+                   <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="" required>
+                   </div>
+                   <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="" required>
+                   </div>
+                </div>
+                <div>
+                    <label for="">What is your age ?</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="">What is your gender? </label>
+                    <select name="" id="">
+                        <option value="">Please Select --</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Contact Number  </label>
+                    <input type="number" placeholder="(+250) 000 000 000">
+                </div>
+                <div>
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="irais@yahoo.com">
+                </div>
+                
+            </fieldset>
+            
+        </form>
     </main>
     
 </body>
