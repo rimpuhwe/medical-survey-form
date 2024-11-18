@@ -1,0 +1,29 @@
+:root{
+    --background-color: #23408e;
+    --text-color:#2c3344;
+    --label-color:#787e8b;
+    --border-color:#9ca4b4;
+    --hover-color:#87abf8;
+    --font-family: "Helvetica Neue",Helvetica,Arial;
+    --border-radius:5px;
+    --white-board:#fff;
+}
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: var(--font-family);
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    width:100%;
+}
+main{
+    background-color: var(--white-board);
+    width:50%;
+    height:100vh;
+    margin:2rem auto;
+
+}
