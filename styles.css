@@ -2,7 +2,7 @@
     --background-color:#1E90FF;
     --text-color:#070721;
     --p-color:#0d0d0f;
-    --label-color:#787e8b;
+    --label-color:#6a6b6d;
     --border-color:#9ca4b4;
     --hover-color:#87abf8;
     --font-family: "Helvetica Neue",Helvetica,Arial;
@@ -90,5 +90,43 @@ hr{
 
     
 }
+legend{
+    margin:15px 0 10px 0;
+    
+}
 
+#multiple-questions{
+    border:non;
+}
+
+#multiple-questions label{
+    font-size:16px;
+    color: var(--label-color);
+}
+
+#multiple-questions input[type="radio"],#multiple-questions input[type="checkbox"] {
+margin-right:5px;
+}
+#multiple-questions .wrap-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#multiple-questions .radio-1{
+    width:30%
+}
+#multiple-questions .radio-2{
+    width:60%;   
+}
+#multiple-questions .radio-3{
+    width:90%;
+}
+#multiple-questions #checklist{
+   width:90%;
+   height:5rem;
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+   column-gap: 10px;
+}
 
