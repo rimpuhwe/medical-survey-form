@@ -3,7 +3,7 @@
     --text-color:#070721;
     --p-color:#0d0d0f;
     --label-color:#6a6b6d;
-    --border-color:#9ca4b4;
+    --border-color:#c9cdd4;
     --hover-color:#87abf8;
     --font-family: "Helvetica Neue",Helvetica,Arial;
     --border-radius:5px;
@@ -96,7 +96,7 @@ legend{
 }
 
 #multiple-questions{
-    border:non;
+    border:none;
 }
 
 #multiple-questions label{
@@ -107,6 +107,17 @@ legend{
 #multiple-questions input[type="radio"],#multiple-questions input[type="checkbox"] {
 margin-right:5px;
 }
+#multiple-questions #text-box{
+    resize:none;
+    padding:10px;
+    border: 1px solid var(--border-color);
+    outline-style: none;
+}
+#multiple-questions #text-box:hover{
+    border:1.5px solid var(--hover-color);
+    box-shadow:  2px 2px var(--border-color);
+}
+
 #multiple-questions .wrap-container{
     display:flex;
     justify-content:space-between;
@@ -129,4 +140,20 @@ margin-right:5px;
    grid-template-columns: repeat(3,1fr);
    column-gap: 10px;
 }
+#btn-container{
+  padding:20px 0px 10px 15px;  
+}
+#btn-container button{
+    align-self: center;
+}
+#submit-btn{
+width: 50%;
+height:2rem;
+border-radius: 5px;
+border: 3px solid var(--background-color);
+background: transparent;
+color:var(--label-color);
+font-weight: 700;
+}
+
 
