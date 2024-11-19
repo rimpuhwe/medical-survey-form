@@ -1,5 +1,5 @@
 :root{
-    --background-color:#1E90FF;
+    --background-color:#0c3258;
     --text-color:#070721;
     --p-color:#0d0d0f;
     --label-color:#6a6b6d;
@@ -29,6 +29,7 @@ main{
     margin:1rem auto;
     padding:20px;
     background:var(--white-board);
+    border-radius: 5px;
 
 }
 #survey-form{
@@ -111,7 +112,6 @@ margin-right:5px;
     resize:none;
     padding:10px;
     border: 1px solid var(--border-color);
-    outline-style: none;
 }
 #multiple-questions #text-box:hover{
     border:1.5px solid var(--hover-color);
@@ -140,20 +140,37 @@ margin-right:5px;
    grid-template-columns: repeat(3,1fr);
    column-gap: 10px;
 }
+#multiple-questions #menu{
+    width:50%;
+    height: 1.2rem;
+    border-radius: 10px;
+    padding-left: 10px;
+}
 #btn-container{
-  padding:20px 0px 10px 15px;  
+    width: 40%;
+    margin: 20px auto;
+    padding:10px;  
+    position: relative;
 }
 #btn-container button{
     align-self: center;
 }
 #submit-btn{
-width: 50%;
-height:2rem;
-border-radius: 5px;
-border: 3px solid var(--background-color);
-background: transparent;
-color:var(--label-color);
-font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    height:2rem;
+    border-radius: 10px;
+    border: 1px solid var(--background-color);
+    background:var(--background-color);
+    color:var(--white-board);
+    font-weight: 700;
+}
+#submit-btn:hover{
+    background: linear-gradient(135deg,var(--background-color), var(--hover-color));
+    color:var(--p-color)
+}
+#multiple-questions #text-box,input,select{
+    outline-style: none;
 }
 
 
