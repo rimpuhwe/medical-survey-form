@@ -33,9 +33,10 @@ main{
 }
 #survey-form{
     background: var(--white-board);
-    border: 3px solid violet;
+    border: 1px solid var(--border-color);
     width:90%;
     margin:1.5rem auto;
+    padding:1rem;
 }
 h1, p{
     text-align:center;
@@ -53,3 +54,41 @@ hr{
     width:100%;
     border: 1px dashed var(--border-color);
 }
+.personal-info {
+    border:1px solid red;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    
+}
+.personal-info .inputs{
+    border:1px solid#1E90FF;
+    display:flex;
+    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1px;
+    align-items: center;
+    padding:0.5rem 0;
+
+}
+.personal-info span{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+.personal-info .inputs label{
+    display: block;
+    font-size:12px;
+    margin-top:2px;
+}
+.personal-info .inputs input{
+   width:100%;
+   height:1.8rem;
+
+    
+}
+
+
