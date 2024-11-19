@@ -48,40 +48,46 @@
                 </div>
                 
             </fieldset>
-            <fieldset>
-                <legend>Check the symptoms that you' re currently experiencing:</legend>
-                <label for=""><input type="checkbox">Chest Pain</label>
-                <label for=""><input type="checkbox">Hematological</label>
-                <label for=""><input type="checkbox">Respiratory</label>
-                <label for=""><input type="checkbox">Lymphatic</label>
-                <label for=""><input type="checkbox">Cardiac disease</label>
-                <label for=""><input type="checkbox">Neurological</label>
-                <label for=""><input type="checkbox">weight gain</label>
-                <label for=""><input type="checkbox">MusculoSkeletal</label>
-                <label for=""><input type="checkbox">Genitourinary</label>
-                <label for=""><input type="checkbox">Psychiatic</label>
-                <label for=""><input type="checkbox">Weight gain</label>
-                <label for=""><input type="checkbox">Others</label>
-            </fieldset>
-            <fieldset>
+            <fieldset id="multiple-questions">
+                <div>
+                    <legend>Check the symptoms that you' re currently experiencing:</legend>
+                    <div id="checklist">
+                        <label for=""><input type="checkbox">Chest Pain</label>
+                        <label for=""><input type="checkbox">Hematological</label>
+                        <label for=""><input type="checkbox">Respiratory</label>
+                        <label for=""><input type="checkbox">Lymphatic</label>
+                        <label for=""><input type="checkbox">Cardiac disease</label>
+                        <label for=""><input type="checkbox">Neurological</label>
+                        <label for=""><input type="checkbox">weight gain</label>
+                        <label for=""><input type="checkbox">MusculoSkeletal</label>
+                        <label for=""><input type="checkbox">Genitourinary</label>
+                        <label for=""><input type="checkbox">Psychiatic</label>
+                        <label for=""><input type="checkbox">Weight gain</label>
+                        <label for=""><input type="checkbox">Others</label>
+                    </div>
+                </div>
                 <div>
                     <legend>Are you currently taking any medication?</legend>
-                    <label for=""><input type="radio">Yes</label>
-                    <label for=""><input type="radio">No</label>
+                    <div class="wrap-container radio-1">
+                        <label for=""><input type="radio" name="no/yes">Yes</label>
+                        <label for=""><input type="radio" name="no/yes">No</label>
+                    </div>
                 </div>
                 <div>
                     <legend>Please list them.</legend>
-                    <textarea name="" id=""></textarea>
+                    <textarea name="" id="" cols="60" rows="5" placeholder="Type here ..."></textarea>
                 </div>
                 <div>
                     <legend>Do you have any medication allergies?</legend>
-                    <label for=""><input type="radio">Yes</label>
-                    <label for=""><input type="radio">No</label>
-                    <label for=""><input type="radio">Not sure</label>
+                    <div class="wrap-container radio-2">
+                        <label for=""><input type="radio" name="yes/no">Yes</label>
+                        <label for=""><input type="radio" name="yes/no">No</label>
+                        <label for=""><input type="radio" name="yes/no">Not sure</label>
+                    </div>
                 </div>
                 <div>
                     <legend>Please list them.</legend>
-                    <textarea name="" id=""></textarea>
+                    <textarea name="" id="" cols="60" rows="5" placeholder="Type here ..."></textarea>
                 </div>
                 <div>
                     <legend>Do you use any kind of illegal drugs or have you ever used them?</legend>
@@ -93,11 +99,13 @@
                 </div>
                 <div>
                     <legend>How often do you consume alcohol?</legend>
-                    <label><input type="radio">Daily</label>
-                    <label><input type="radio">Weekly</label>
-                    <label><input type="radio">Monthly</label>
-                    <label><input type="radio">Occasionally</label>
-                    <label><input type="radio">Never</label>
+                    <div class="wrap-container radio-3">
+                        <label><input type="radio" name="times">Daily</label>
+                        <label><input type="radio" name="times">Weekly</label>
+                        <label><input type="radio" name="times">Monthly</label>
+                        <label><input type="radio" name="times">Occasionally</label>
+                        <label><input type="radio" name="times">Never</label>
+                    </div>
                 </div>
             </fieldset>
             <div>
