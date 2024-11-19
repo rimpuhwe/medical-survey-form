@@ -16,13 +16,10 @@
     font-family: var(--font-family);
 }
 body {
-    
     color: var(--text-color);
     font-family: var(--font-family);
     width:100%;
-    background-color: var(--background-color);
-
-    
+    background-color: var(--background-color);    
 }
 main{
     width:60%;
@@ -30,7 +27,6 @@ main{
     padding:20px;
     background:var(--white-board);
     border-radius: 5px;
-
 }
 #survey-form{
     background: var(--white-board);
@@ -60,20 +56,17 @@ hr{
     width:100%;
     display:flex;
     flex-direction:column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 .personal-info .inputs{
     border:1px solid#1E90FF;
-    display:flex;
-    
+    display:flex;   
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 1px;
     align-items: center;
     padding:0.5rem 0;
-
 }
 .personal-info span{
     color: var(--text-color);
@@ -87,24 +80,18 @@ hr{
 }
 .personal-info .inputs input{
    width:100%;
-   height:1.8rem;
-
-    
+   height:1.8rem;   
 }
 legend{
-    margin:15px 0 10px 0;
-    
+    margin:15px 0 10px 0;   
 }
-
 #multiple-questions{
     border:none;
 }
-
 #multiple-questions label{
     font-size:16px;
     color: var(--label-color);
 }
-
 #multiple-questions input[type="radio"],#multiple-questions input[type="checkbox"] {
 margin-right:5px;
 }
@@ -117,7 +104,6 @@ margin-right:5px;
     border:1.5px solid var(--hover-color);
     box-shadow:  2px 2px var(--border-color);
 }
-
 #multiple-questions .wrap-container{
     display:flex;
     justify-content:space-between;
