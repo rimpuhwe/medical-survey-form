@@ -18,34 +18,34 @@
                         <span>Full Name</span>
                        <div class="inputs">
                            <div>
-                            <input type="text" id="first-name" name="" required>
-                            <label for="">First Name </label>
+                            <input type="text" id="name" name="" placeholder="Ex:Chloe" required>
+                            <label for="name" id="name-label">First Name </label>
                            </div>
                            <div>
-                            <input type="text" id="last-name" name="" required>
-                            <label for="">Last Name</label>
+                            <input type="text" id="name" name="" placeholder="Ex:Kardashian" required>
+                            <label for="name" id="name-label">Last Name</label>
                            </div>
                        </div>
                     </div>
                     <div class="smaller-container">
-                        <label for="">What is your age ?</label>
-                        <input type="number" id="">
+                        <label for="number" id="number-label">What is your age ?</label>
+                        <input type="number" id="number" min="18" max="30" placeholder="Ex:23">
                     </div>
                     <div class="smaller-container">
                         <label for="">What is your gender? </label>
-                        <select name="" id="gender-list">
+                        <select name="gender-list" id="dropdown">
                             <option value="">Please Select --</option>
-                            <option value="">Male</option>
-                            <option value="">Female</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                         </select>
                     </div>
                     <div class="smaller-container">
-                        <label for="">Contact Number  </label>
-                        <input type="tel" id="" placeholder="(+250) 000 000 000">
+                        <label for="tel">Contact Number  </label>
+                        <input type="tel" id="tel" placeholder="(+250) 000 000 000">
                     </div>
                     <div class="smaller-container">
-                        <label for="">Email Address</label>
-                        <input type="email" id="" placeholder="irais@yahoo.com">
+                        <label for="email" id="email-label">Email Address</label>
+                        <input type="email" id="email" placeholder="Ex:irais@yahoo.com" required>
                     </div>
                 </div>
                 
@@ -54,25 +54,25 @@
                 <div>
                     <legend>Check the symptoms that you' re currently experiencing:</legend>
                     <div id="checklist">
-                        <label for=""><input type="checkbox" id="">Chest Pain</label>
-                        <label for=""><input type="checkbox" id="">Hematological</label>
-                        <label for=""><input type="checkbox" id="">Respiratory</label>
-                        <label for=""><input type="checkbox" id="">Lymphatic</label>
-                        <label for=""><input type="checkbox" id="">Cardiac disease</label>
-                        <label for=""><input type="checkbox" id="">Neurological</label>
-                        <label for=""><input type="checkbox" id="">weight gain</label>
-                        <label for=""><input type="checkbox" id="">MusculoSkeletal</label>
-                        <label for=""><input type="checkbox" id="">Genitourinary</label>
-                        <label for=""><input type="checkbox" id="">Psychiatic</label>
-                        <label for=""><input type="checkbox" id="">Weight gain</label>
-                        <label for=""><input type="checkbox" id="">Others</label>
+                        <label for=""><input type="checkbox" value="Chest Pain" id="">Chest Pain</label>
+                        <label for=""><input type="checkbox" value="Hematological" id="">Hematological</label>
+                        <label for=""><input type="checkbox" value="Respiratory" id="">Respiratory</label>
+                        <label for=""><input type="checkbox" value="Lymphatic" id="">Lymphatic</label>
+                        <label for=""><input type="checkbox" value="Cardiac disease" id="">Cardiac disease</label>
+                        <label for=""><input type="checkbox" value="Neurological" id="">Neurological</label>
+                        <label for=""><input type="checkbox" value="weight gain" id="">weight gain</label>
+                        <label for=""><input type="checkbox" value="MusculoSkeletal" id="">MusculoSkeletal</label>
+                        <label for=""><input type="checkbox" value="Genitourinary" id="">Genitourinary</label>
+                        <label for=""><input type="checkbox" value="Psychiatic" id="">Psychiatic</label>
+                        <label for=""><input type="checkbox" value="Weight gain" id="">Weight gain</label>
+                        <label for=""><input type="checkbox" value="Others" id="">Others</label>
                     </div>
                 </div>
                 <div>
                     <legend>Are you currently taking any medication?</legend>
                     <div class="wrap-container radio-1">
-                        <label for=""><input type="radio" name="no/yes" id="">Yes</label>
-                        <label for=""><input type="radio" name="no/yes" id="">No</label>
+                        <label for="ye"><input type="radio" value="yes" name="no/yes" id="ye">Yes</label>
+                        <label for="nop"><input type="radio" value="no" name="no/yes" id="nop">No</label>
                     </div>
                 </div>
                 <div>
@@ -82,14 +82,14 @@
                 <div>
                     <legend>Do you have any medication allergies?</legend>
                     <div class="wrap-container radio-2">
-                        <label for=""><input type="radio" name="yes/no" id="">Yes</label>
-                        <label for=""><input type="radio" name="yes/no" id="">No</label>
-                        <label for=""><input type="radio" name="yes/no" id="">Not sure</label>
+                        <label for="yes"><input type="radio" value="yes" name="yes/no" id="yes">Yes</label>
+                        <label for="no"><input type="radio" value="no" name="yes/no" id="no">No</label>
+                        <label for="not-sure"><input type="radio" value="sure" name="yes/no" id="not-sure">Not sure</label>
                     </div>
                 </div>
                 <div>
                     <legend>Please list them.</legend>
-                    <textarea name="" id="text-box" cols="60" rows="5" placeholder="Type here ..."></textarea>
+                    <textarea id="text-box" cols="60" rows="5" placeholder="Type here ..."></textarea>
                 </div>
                 <div>
                     <legend>Do you use any kind of illegal drugs or have you ever used them?</legend>
@@ -102,16 +102,16 @@
                 <div>
                     <legend>How often do you consume alcohol?</legend>
                     <div class="wrap-container radio-3">
-                        <label><input type="radio" name="times">Daily</label>
-                        <label><input type="radio" name="times">Weekly</label>
-                        <label><input type="radio" name="times">Monthly</label>
-                        <label><input type="radio" name="times">Occasionally</label>
-                        <label><input type="radio" name="times">Never</label>
+                        <label><input type="radio" value="daily" name="times">Daily</label>
+                        <label><input type="radio" value="weekly" name="times">Weekly</label>
+                        <label><input type="radio" value="monthly" name="times">Monthly</label>
+                        <label><input type="radio" value="occassionaly" name="times">Occasionally</label>
+                        <label><input type="radio" value="never" name="times">Never</label>
                     </div>
                 </div>
             </fieldset>
             <div id="btn-container">
-                <button id="submit-btn">SUBMIT</button>
+                <button id="submit">SUBMIT</button>
             </div>   
         </form>
     </main>   
