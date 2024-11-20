@@ -100,9 +100,13 @@ margin-right:5px;
     padding:10px;
     border: 1px solid var(--border-color);
 }
-#multiple-questions #text-box:hover{
+#multiple-questions #text-box:hover,input:hover,select:hover{
     border:1.5px solid var(--hover-color);
     box-shadow:  2px 2px var(--border-color);
+}
+input[type="radio"]:hover, input[type="checkbox"]:hover{
+    border:none;
+    box-shadow:none;
 }
 #multiple-questions .wrap-container{
     display:flex;
