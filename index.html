@@ -8,10 +8,12 @@
 </head>
 <body>
     <main>
+        <!-- the title for the form -->
         <h1 id="title">Medical Survey Form</h1>
         <p id="description">Health care providers questionnaire to collect information about the patient's medical history during a medical or physical examination.</p>
         <hr>
         <form id="survey-form" action="" method="post">
+            <!-- the patient's persanal information details -->
             <fieldset>
                 <div class="info-container">
                     <div class="personal-info">
@@ -50,9 +52,11 @@
                 </div>
                 
             </fieldset>
+            <!-- multiple questions to get more detailed info -->
             <fieldset id="multiple-questions">
                 <div>
                     <legend>Check the symptoms that you' re currently experiencing:</legend>
+                    <!-- checklist . choose all that apply -->
                     <div id="checklist">
                         <label for=""><input type="checkbox" value="Chest Pain" id="">Chest Pain</label>
                         <label for=""><input type="checkbox" value="Hematological" id="">Hematological</label>
@@ -70,6 +74,7 @@
                 </div>
                 <div>
                     <legend>Are you currently taking any medication?</legend>
+                    <!-- radio option . only one to be choosen -->
                     <div class="wrap-container radio-1">
                         <label for="ye"><input type="radio" value="yes" name="no/yes" id="ye">Yes</label>
                         <label for="nop"><input type="radio" value="no" name="no/yes" id="nop">No</label>
@@ -77,6 +82,7 @@
                 </div>
                 <div>
                     <legend>Please list them.</legend>
+                    <!-- text box for patient's sugeestion -->
                     <textarea name="" id="text-box" cols="60" rows="5" placeholder="Type here ..."></textarea>
                 </div>
                 <div>
@@ -93,6 +99,7 @@
                 </div>
                 <div>
                     <legend>Do you use any kind of illegal drugs or have you ever used them?</legend>
+                    <!-- drop-down list -->
                     <select name="" id="menu">
                         <option value="">Please select --</option>
                         <option value="yes">Yes</option>
@@ -111,6 +118,7 @@
                 </div>
             </fieldset>
             <div id="btn-container">
+                <!-- the submit button  -->
                 <button id="submit">SUBMIT</button>
             </div>   
         </form>
